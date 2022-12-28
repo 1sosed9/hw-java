@@ -32,34 +32,25 @@ public class Group {
     }
 
     public void addStudent(Student student) throws GroupOverflowException {
-        int num = 0;
+
         for (int i = 0; i < this.studens.length; i++) {
             if (this.studens[i] == null) {
                 this.studens[i] = student;
                 this.studens[i].setGroupName(this.groupName);
-                num += 1;
                 break;
             } 
         }
-        if (num == 0) {
-            throw new GroupOverflowException();
-        }
+        throw new GroupOverflowException();
     }
     
     public Student searchStudentByLastName(String lastName) throws StudentNotFoundException {
         
-        int num = 0;
         for (int i = 0; i < this.studens.length; i++) {
             if (this.studens[i].getLastName().equals(lastName)) {
                 return studens[i]; 
-            } else {
-               num += 1;
-            }
+            } 
         }
-        if (num == this.studens.length) {
-            throw new StudentNotFoundException();
-        }
-        return null;
+        throw new StudentNotFoundException();
     }
 
     public boolean removeStudentByID(int id) {
