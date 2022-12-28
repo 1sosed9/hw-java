@@ -37,7 +37,7 @@ public class Group {
             if (this.studens[i] == null) {
                 this.studens[i] = student;
                 this.studens[i].setGroupName(this.groupName);
-                break;
+                return;
             } 
         }
         throw new GroupOverflowException();
