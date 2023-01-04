@@ -1,5 +1,3 @@
-package com;
-
 public class Student extends Human{
     
     private int id;
