@@ -2,9 +2,6 @@ import java.util.Scanner;
 
 public class AddAndCreateStudentsFromKeyboard extends Student{
 
-    Gender male = Gender.MALE;
-    Gender female = Gender.FEMALE;
-
     public AddAndCreateStudentsFromKeyboard() {
         super();
     }
