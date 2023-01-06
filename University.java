@@ -92,6 +92,12 @@ public class University {
     System.out.println(group1);
     System.out.println();
 
-    
+    Student student12 = AddAndCreateStudentsFromKeyboard.createNewStudent();
+    System.out.println(student12.toString());
+    System.out.println(); 
+
+    AddAndCreateStudentsFromKeyboard.addStudentToGroup(student12, group1);
+    System.out.println(group1);
+
    }
 }
