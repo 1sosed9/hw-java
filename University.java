@@ -84,6 +84,14 @@ public class University {
 
     group1.sortStudentsByLastName();
     System.out.println(group1);
+    System.out.println();
 
+    System.out.println(group1.removeStudentByID(1)); 
+    System.out.println();
+
+    System.out.println(group1);
+    System.out.println();
+
+    
    }
 }
