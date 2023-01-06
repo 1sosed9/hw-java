@@ -1,4 +1,4 @@
-public class Student extends Human{
+public class Student extends Human {
     
     private int id;
     private String groupName;
@@ -26,6 +26,6 @@ public class Student extends Human{
 
     @Override
     public String toString() {
-        return "Student [id=" + id + ", groupName=" + groupName + "]";
+        return "Student [id=" + id + ", groupName=" + groupName + ", lastName=" + this.getLastName() + ", name=" + this.getName() + "]";
     }
 }

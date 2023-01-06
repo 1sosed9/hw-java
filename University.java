@@ -19,12 +19,12 @@ public class University {
 
     Student student1 = new Student("Vasil", "Vasilchenko", male, 1);
     Student student2 = new Student("Sergiy", "Sergiyenko", male, 2);
-    Student student3 = new Student("Ivan", "Ivanenko", male, 3);
-    Student student4 = new Student("Evgen", "Evgenenko", male, 4);
+    Student student3 = new Student("Ivan", "Aga", male, 3);
+    Student student4 = new Student("Evgen", "Krupa", male, 4);
     Student student5 = new Student("Petro", "Petrenko", male, 5);
-    Student student6 = new Student("Olexandr", "Olexandrenko", male, 6);
+    Student student6 = new Student("Olexandr", "Zhoh", male, 6);
     Student student7 = new Student("Denis", "Denisenko", male, 7);
-    Student student8 = new Student("Bogdan", "Bogdanenko", male, 8);
+    Student student8 = new Student("Bogdan", "Kut", male, 8);
     Student student9 = new Student("Maxim", "Maximenko", male, 9);
     Student student10 = new Student("Pavel", "Pavlenko", male, 10);
     Student student11 = new Student("Stepan", "Stepanenko", male, 11);
@@ -53,6 +53,8 @@ public class University {
 
     // 4.
     System.out.println(group1.toString());
+    System.out.println();
+    
 
     try {
       group1.addStudent(student11);
@@ -71,6 +73,17 @@ public class University {
     System.out.println();
 
     System.out.println("Hello! Program is work");
+    System.out.println();
+
+    Student[] var = group1.getStudens();
+    System.out.println(var[1].getLastName());
+    System.out.println();
+
+    System.out.println(group1.toString());
+    System.out.println();
+
+    group1.sortStudentsByLastName();
+    System.out.println(group1);
 
    }
 }

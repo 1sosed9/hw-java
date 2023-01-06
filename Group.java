@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class Group {
 
@@ -61,5 +62,19 @@ public class Group {
             }
         }
         return false;
+    }
+
+    public void sortStudentsByLastName() {
+        
+        Student[] students = this.getStudens();
+        for (int k = 0; k < students.length; k++) {
+            for (int i = 0; i < students.length - 1; i++) {
+                if (students[i].getLastName().length() > students[i + 1].getLastName().length()) {
+                    Student boofer = students[i];
+                    students[i] = students[i + 1];
+                    students[i + 1] = boofer;
+                }
+            }
+        }
     }
 }
